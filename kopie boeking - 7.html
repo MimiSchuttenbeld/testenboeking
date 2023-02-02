@@ -1,0 +1,864 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>{email subject}</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <style type="text/css">
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / Margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            Margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+
+            line-height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: #464644;
+            background-color: pink;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="Margin: 16px 0"] {
+            Margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        /* table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        */
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            Margin: 0 auto !important;
+        }
+
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+    </style>
+
+    <!-- Progressive Enhancements -->
+    <style>
+        /* Media Queries */
+        @media screen and (min-width: 480px) {
+            .body {
+                max-width: 600px;
+                font-size: 13px !important;
+            }
+
+            /*Puts rows into columns*/
+            .wrapblock {
+                columns: 2;
+            }
+
+            .tipimg {
+                max-height: 250px;
+                max-width: 280px;
+                margin: 50px 0px !important;
+                object-fit: cover;
+
+            }
+
+            
+
+            .imagetransform {
+                min-height: 250px !important;
+            }
+
+            /* What it does: less padding on smaller screens; */
+            .blockpadding {
+                padding: 20px !important;
+
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            /*Makes icons bigger*/
+            .icoon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (min-width: 480px) {
+            .tipimg {
+                max-height: 400px !important;
+                max-width: 305px !important;
+
+            }
+        }
+    </style>
+</head>
+
+<body width="100%">
+    <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="max-width: 600px;"
+        bgcolor="white" style="border-collapse: collapse; overflow: scroll;">
+        <tr>
+            <td align="center" valign="top" style=" overflow: hidden;">
+                <!-- Visually Hidden Preheader Text : BEGIN (missing css vanuit div:  "mso-hide: all;" )-->
+                <div
+                    style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; font-family: sans-serif;">
+                    Boekingsbevestiging Stayokay Egmond
+                </div>
+                <!-- Visually Hidden Preheader Text : END -->
+
+                <div style="max-width: 600px; overflow: hidden">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                                <td>
+                                    <![endif]-->
+                    <!-- HEADER -->
+                    <div
+                        style="height: 250px; max-width: 600px !important; background-image: url(https://www.stayokay.com/system/hostels/images/000/000/004/large/Stayokay-Amsterdam-Oost---TacoVanDerWerf-001.jpg); background-size: cover; object-position: right;">
+
+                        <img src="https://www.stayokay.com/images/stayokay-logo-rgb-200x67.png"
+                            style="margin-top: 175px;" width="100" align="right" alt="logo Stayokay" border="0">
+                        <!--
+                                            <img class="headerimg"
+                                            src="https://www.stayokay.com/system/hostels/images/000/000/004/small/Stayokay-Amsterdam-Oost---TacoVanDerWerf-001.jpg?1633361571"
+                                            width="100%" height="250" style="object-fit:cover; top: 0px;">
+                                        -->
+                    </div>
+                    <!--
+                                        <div align="right" style=" width: 210px; height: 70px; margin: 0px 20px 0px 0px; background-color: #289D90;">
+                                            <p>BOEKING</p>
+                                            <p>40028-20-10753</p>
+                                        </div>
+                                    -->
+
+                    <!-- Email Header : END -->
+
+                    <!-- Email Intro : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
+                        style="max-width: 600px; display: inline-block;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 40px 40px 40px 40px;">Hi <b>[voornaam]</b>,
+                                    <br>
+                                    Bedankt voor je reservering bij <b>[naam hostel]</b>!
+                                    </br>
+                                    We kunnen niet wachten om je te zien.
+                                    De betaling is gelukt en je reserveringsnummer is: <b>[reserveringsnummer]</b>.
+
+                                    <br>
+                                    Heb je nog vragen? Bel of mail ons. We helpen je graag!
+                                    <br>
+                                    <br>
+                                    Hartelijke groet,<br>
+                                    <b>[naam hostel]</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Email Intro : END -->
+                    <!-- Email Booking Details 2: BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
+                        style=" max-width: 600px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0px 40px 0px 40px;">
+                                    <h1
+                                        style="Margin-top: 0; color: #289D90; font-size: 35px; padding-bottom: 2px; border-bottom: 2px solid #289D90;">
+                                        BOEKING</h1>
+
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                        style="max-width: 600px;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="wrapblock" align="center" valign="top"
+                                                    style="padding: 0px 0;">
+                                                    <!--[if mso]>
+                                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="600">
+                                                        <tr>
+                                                            <td align="left" valign="top" width="330">
+                                                                <![endif]-->
+                                                    <div style="display: inline-block; min-width: 200px; width: 100%;"
+                                                        class="stack-column">
+                                                        <table cellspacing="0" cellpadding="0" border="0" align="left"
+                                                            width="100%">
+                                                            <tr>
+                                                                <th align="left">
+                                                                    Aantal gasten
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 8px">
+                                                                    <table cellspacing="0" cellpadding="0" border="0"
+                                                                        align="left" width="100%">
+                                                                        <tr>
+                                                                            <td width="10%" style="padding: 0px 0;">
+                                                                                <span>1</span>
+                                                                            </td>
+                                                                            <td width="90%" style="padding: 5px 0;">
+                                                                                Personen (vanaf 12 jr)</td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10%" style="padding: 5px 0;">
+                                                                                <span>1</span>
+                                                                            </td>
+                                                                            <td width="90%" style="padding: 5px 0;">
+                                                                                Kinderen (3-12 jr)</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10%" style="padding: 5px 0;">
+                                                                                <span>1</span>
+                                                                            </td>
+                                                                            <td width="90%" style="padding: 5px 0;">
+                                                                                Baby (t/m 3 jr)
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br>
+                                                    </div>
+                                                    <!--[if mso]>
+                                                            </td>
+                                                            <td align="left" valign="top" width="330">
+                                                                <![endif]-->
+                                                    <div style="display:inline-block; min-width: 200px; vertical-align: top; width: 100%;"
+                                                        class="stack-column">
+                                                        <table cellspacing="0" cellpadding="0" border="0" align="right"
+                                                            width="100%" class="nachtenblok">
+                                                            <th align="left">
+                                                                Aantal nachten
+                                                            </th>
+                                                            </br>
+                                                            <tr>
+                                                                <td style="padding-top: 8px">
+                                                                    <table cellspacing="0" cellpadding="0" border="0"
+                                                                        align="center" width="100%">
+                                                                        <tr>
+                                                                            <td style="padding: 5px 0;">
+                                                                                Nachten:</td>
+                                                                            <td style="padding: 5px 0;">
+                                                                                <span>2</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="padding: 5px 0;">
+                                                                                Aankomst:</td>
+                                                                            <td style="padding: 5px 0;">
+                                                                                <span>16-10-2022</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="padding: 5px 0;">
+                                                                                Vertrek:</td>
+                                                                            <td style="padding: 5px 0;">
+                                                                                <span>18-10-2022</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <!--[if mso]>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <![endif]-->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Email Booking Details 2: END -->
+                    <!-- Email Cost Details 2: BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
+                        style=" padding: 40px; max-width: 600px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px 40px 40px 40px">
+                                    <h1 colspan="3" align="left" style="font-size: 16px; margin-bottom: -5px; ">
+                                        Kamerselectie
+                                    </h1>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center"
+                                        style="table-layout:fixed; max-width: 520px; border-top: 2px solid #919191;">
+                                        <tr>
+                                            <td style="padding: 15px 0; text-align: left; max-width: 50px;">
+                                                <span><b>1 </span>x</b>
+                                            </td>
+                                            <td style="padding: 15px 0; width: 360px;">4-persoonskamer</td>
+                                            <td style="text-align: right; padding: 15px 0; width: 80px;">€222,30</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 15px 0; text-align: left; width: 80px;">
+                                                <span><b>2</span> x</b>
+                                            </td>
+                                            <td style="padding: 15px 0; width: 200px;"><i>Bed</i> op 5-persoonskamer
+                                            </td>
+                                            <td style="text-align: right; padding: 15px 0; width: 80px;">€222,30</td>
+                                        </tr>
+                                    </table>
+
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                                        <h1 colspan="2" align="left" style="font-size: 16px; margin-bottom: -5px;">
+                                            Extra's</h1>
+                                        <tr style="border-top:  1px solid #919191;">
+
+                                            <td valign="top" style="padding: 15px 0;">
+                                                Huur een handdoek <br>
+                                                <span style="color: #919191; font-size: 13px;"><i>2 x á € 2,50 p.s.
+                                                        </i></span>
+                                            </td>
+                                            <td width="80px" valign="top"
+                                                style="text-align: right; white-space: nowrap; padding: 15px 0;">
+                                                € 5,00
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td valign="top" style="padding: 15px 0;">
+                                                Stay and Snooze 4 persoonskamer <br>
+                                                <span style="color: #919191; font-size: 13px;"><i>1 x á € 38,50 p.s. </i></span>
+                                            </td>
+                                            <td width="80px" valign="top"
+                                                style="text-align: right; white-space: nowrap; padding: 15px 0;">
+                                                € 38,50
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td valign="top" style="padding: 15px 0;">
+                                                Diner Best Deal <br>
+                                                <span style="color: #919191; font-size: 13px;"><i>2 x Zo,
+                                                        16.10.2022:<br>à €16,50 p.p.p.n. </i></span>
+                                            </td>
+                                            <td width="80px" valign="top"
+                                                style="text-align: right; white-space: nowrap; padding: 15px 0;">
+                                                € 33,00
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                                        <tr>
+                                            <td valign="top"
+                                                style="padding: 15px 0; border-bottom: 1px solid #919191; color: #289D90;">
+                                                <span style="color: #289D90;"><b>Korting:</b></span> Lidmaatschap
+                                            </td>
+                                            <td width="80px" valign="top"
+                                                style="text-align: right; white-space: nowrap; padding: 15px 0; border-bottom: 1px solid #919191 ">
+                                                € -22,23
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"
+                                                style="padding: 15px 0; border-bottom: 1px solid #919191; color: #289D90;">
+                                                <span style="color: #289D90;"><b>Promocode:</b></span> TEST Promocode
+                                            </td>
+                                            <td width="80px" valign="top"
+                                                style="text-align: right; white-space: nowrap; padding: 15px 0; border-bottom: 1px solid #919191;">
+                                                € -263,13
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" style="padding: 15px 0; color: #289D90;">
+                                                <span style="color: #289D90;"><b>Korting:</b></span> Kinderkorting
+                                            </td>
+                                            <td width="80px" valign="top"
+                                                style="text-align: right; white-space: nowrap; padding: 15px 0;">
+                                                € -36,50
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                                        <tr>
+                                            <td width="50%" valign="top"
+                                                style="padding-top: 20px; border-top: 2px solid #289D90">
+                                                <h2 style="Margin: 0;">Totaal</h2>
+                                            </td>
+                                            <td width="50%" valign="top"
+                                                style="padding-top: 20px; text-align: right; white-space: nowrap; border-top: 2px solid #289D90">
+                                                <h2 style="Margin: 0;">€ 9,94</h2>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Email Cost Details : END -->
+                    <!-- Toeslagen Details: BEGIN -->
+                    <div style="padding: 20px;">
+                        <table class="blockpadding" border="0" cellpadding="0" cellspacing="0" align="center"
+                            width="100%" style="max-width: 600px;">
+                            <tbody>
+                                <tr>
+                                    <td class="wrapblock" align="center" valign="top"
+                                        style="padding: 20px 20px; background-color: #E0EAEB;">
+                                        <!--[if mso]>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="600">
+                                        <tr>
+                                            <td align="left" valign="top" width="330">
+                                                <![endif]-->
+                                        <div style="display: inline-block; min-width: 200px; width: 100%;"
+                                            class="stack-column">
+                                            <table cellspacing="0" cellpadding="0" border="0" align="top" width="100%">
+                                                <tr>
+                                                    <td valign="top" style="padding: 5px 0;">
+                                                        <b>Toeristenbelasting</b>
+                                                        <br>
+                                                        <span>Te betalen bij aankomst €[7,80].</span>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top" style="padding: 5px 0;">
+                                                        <b>Betaling</b>
+                                                        <br>
+                                                        <span>Deze boeking is al betaald. </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="top" style="padding: 5px 0;">
+                                                        <b>Non-Flex boeking</b>
+                                                        </br>
+                                                        <span>Voor deze boeking gelden speciale voorwaarden en een extra
+                                                            voordeeltarief. De boeking is niet restitueerbaar.</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Toeslagen Details: END -->
+                    <div style="height: 100px; width: 100%;"></div>
+                    <!-- Email Hostel Details Nieuw: BEGIN -->
+                    <div align="center"
+                        style="background-color: #289D90;width: 110%;max-width: 700px;margin-bottom: 50px;margin-left: -20px; transform: skewY(-5deg);">
+                        <table align="center" cellpadding="0" cellspacing="0" border="0"
+                            style="color: #FFFFFF; width: 100%; max-width: 600px; height: fit-content; max-height: 500px; ">
+                            <th
+                                style="color: #289D90; font-size: 35px; display: inline-block; padding-bottom: 2px; margin: -20px 0px 0px 50px;">
+                                HOSTEL</th>
+                            <tr>
+                                <td class="wrapblock" valign="top" align="center"
+                                    style="padding: 30px 0px 30px 0px; height: auto; max-width: 100%; right: 0; left: 0; overflow: hidden; transform: skewY(5deg);">
+                                    <table border="0">
+                                        <tbody>
+                                            <tr width="50%">
+                                                <td align="center"
+                                                    style="width: 100%; height: auto; display: inline-block; padding-bottom: 20px;">
+                                                    <h2>AMSTERDAM OOST</h2>
+                                                    <table border="0" cellpadding="5" cellspacing="0"
+                                                        style="width: 100%; margin-bottom: 20px !important; font-size: 17px;">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td style="width: 60px; text-align: right;">
+                                                                    <img class="icoon" src="images/locatieicon.png"
+                                                                        style="height: 18px; width: 15px; margin: 5px;">
+                                                                </td>
+                                                                <td>Timorplein 21,<br> 1904 CC, Amsterdam</td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td style="width: 60px; text-align: right;">
+                                                                    <img class="icoon" src="images/telefoonicon.png"
+                                                                        style="height: 15px; width: 15px; margin: 5px;">
+                                                                </td>
+                                                                <td>+31 (0)20 551 31 90</td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td style="width: 60px; text-align: right;">
+                                                                    <img class="icoon" src="images/emailicon.png"
+                                                                        style="height: 15px; width: 15px; margin: 5px;">
+                                                                </td>
+                                                                <td>amsterdamoost@<wbr />stayokay.com</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <button aria-label="routebeschrijving"
+                                                        style="width: auto; height: 30px; font-weight: bold; font-size: 12px; background-color: #FFFFFF; border: 2px solid #0000FF; box-shadow: 5px 7px 0 0 #0000ff; cursor: pointer; color: #0000FF;">ROUTEBESCHRIJVING
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr
+                                                style="width: 50%; ">
+                                                <td>
+                                                    <div style="height: 250px; width: 100%; background-color: #289D90; transform: skewY(-5deg); overflow: hidden; background-color: #0000FF;">
+                                                        <img src="https://www.stayokay.com/system/hostels/confirmation_mail_image_hostels/000/000/004/normal/confirmation-mail-image-hostel.jpg" 
+                                                        style="height: 112%; width: 100%; object-fit: cover; margin-top: -13px;  transform: skewY(5deg);" valign="middle" align="center">
+                                                        
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <!-- WELKOM -->
+                    <div align="left"
+                        style="background-color: #F67599; width: 110%; max-width: 700px; height: fit-content; margin-left: -32px; transform: skewY(5deg); margin-top: -40px;" >
+                        <table align="center" cellpadding="0" cellspacing="0" border="0"
+                            style="color: #FFFFFF; width: 100%; max-width: 600px; height: fit-content; max-height: 500px;">
+                            <tr>
+                                <td class="wrapblock" valign="top" align="center"
+                                    style="padding: 30px 0px 30px 0px; height: fit-content; max-width: 100%; right: 0; left: 0; overflow: hidden; transform: skewY(-5deg)">
+                                    <table border="0">
+                                        <tbody>
+
+                                            <tr width="50%">
+                                                <td>
+                                                    <div style="height: 250px; width: 100%; background-color: #289D90; transform: skewY(5deg); overflow: hidden; background-color: #0000FF;">
+                                                        <img src="https://www.stayokay.com/system/hostels/confirmation_mail_image_hostels/000/000/004/normal/confirmation-mail-image-hostel.jpg" 
+                                                        style="height: 112%; width: 100%; object-fit: cover; transform: skewY(-5deg); margin-top: -13px;" valign="middle" align="top">
+                                                        
+                                                    </div>
+                                                    <!--<div style="height: 250px; width: 100%; overflow: hidden; transform: skewY(5deg); background-color: blue;">
+                                                        <img width="110%" height="105%" min-height="250px !important" min-width="380px !important" align="top" style="transform: skewY(-5deg); object-fit: cover;"
+                                                            src="https://www.stayokay.com/system/hostels/confirmation_mail_image_hostels/000/000/004/normal/confirmation-mail-image-hostel.jpg">
+                                                    </div>-->
+                                                </td>
+                                            </tr>
+                                            <tr width="50%" align="center">
+                                                <td align="center" style=" display: inline-block; ">
+                                                    <h2>WELKOM</h2>
+                                                    <p style="text-align: left; max-width: 250px;">
+                                                        Wat leuk dat je bij ons komt overnachten!
+                                                        De belangrijkste informatie is vast op een rij gezet. Denk aan: 
+                                                        <ul style="list-style-type: circle; font-weight: bold; text-align: left; padding-left: 15px;width: 250px;">
+                                                            <li>Check-in/out tijd</li>
+                                                            <li>Mogelijkheden ontbijt, lunch en diner</li>
+                                                            <li>Informatie bedden(goed) en handdoeken</li>
+                                                        </ul>                                                     
+                                                    </p>
+                                                    <a href="https://www.stayokay.com/nl/hostel/amsterdam-oost/welkom" target="_blank"><button aria-label="routebeschrijving"
+                                                        style="width: auto; height: 30px; font-weight: bold; font-size: 12px; background-color: #FFFFFF; border: 2px solid #0000FF; box-shadow: 5px 7px 0 0 #0000ff; cursor: pointer; color: #0000FF;">
+                                                        PRAKTISCHE INFORMATIE
+                                                    </button></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Email Hostel Details Nieuw: END -->
+                    <div style="height: 50px; width: 100%;"></div>
+                    
+                    <!-- Email Personal Details : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
+                        style=" max-width: 600px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0px 40px 10px 40px;">
+                                    <h1 style=" color: #289D90; font-size: 20px; margin-bottom: -5px;">
+                                        PERSOONLIJKE GEGEGEVENS</h1>
+
+                                    <table class="blockpadding" border="0" cellpadding="0" cellspacing="0"
+                                        align="center" width="100%"
+                                        style="max-width: 600px; border-top: 2px solid #289D90;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="wrapblock" align="center" valign="top"
+                                                    style="padding: 0px 0px;">
+                                                    <!--[if mso]>
+                                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="600">
+                                            <tr>
+                                                <td align="left" valign="top" width="330">
+                                                    <![endif]-->
+                                                    <div style="display: inline-block; min-width: 200px; width: 100%;"
+                                                        class="stack-column">
+
+                                                        <table cellspacing="0" cellpadding="0" border="0" align="top"
+                                                            width="100%">
+                                                            <tr>
+                                                                <td valign="top" style="padding: 5px 0;">
+                                                                    <b>Naam:</b>
+                                                                    <br>
+                                                                    <span>Mimi Schuttenbeld</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td valign="top" style="padding: 5px 0;">
+                                                                    <b>Telefoon:</b>
+                                                                    <br>
+                                                                    <span>+31 (0)655003094</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" style="padding: 5px 0;">
+                                                                    <b>E-mail:</b>
+                                                                    </br>
+                                                                    <span>m.schuttenbeld@stayokay.com</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" style="padding: 5px 0;">
+                                                                    <b>Additionele informatie:</b>
+                                                                    </br>
+                                                                    <span>Ik houd niet van groenten en ik wil extra
+                                                                        dikke dekens.</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Email Personal Details : END -->
+                    <div style="height: 50px; width: 100%;"></div>
+                    <!-- Email TIPS Details : BEGIN -->
+                    <div
+                        style="transform:  skewY(-5deg);background-color: #E0FF00;max-height: 275px; max-width: 500px;">
+                        <table align="center" cellpadding="0" cellspacing="0" width="100%"
+                            style=" height: auto; max-width: 550px; max-height: 350px;">
+                            <th>
+                                <p valign="bottom" align="right"
+                                    style="margin: -10px 30px; position: relative; z-index: 3; color: #289D90; font-size: 30px;">
+                                    TIPS IN DE BUURT
+                                </p>
+                            </th>
+                            <tr>
+                                <td class="wrapblock" valign="top" style="transform:  skewY(5deg)">
+                                    <table border="0" width="100%">
+                                        <tbody>
+                                            <tr style="height: 250px; display: inline-block; ">
+                                                <td align="center" valign="center" style="padding: 30px;">
+                                                    <p valign="center" style="min-width: 200px; width: 80%;">
+                                                        Om de voorpret alvast te laten beginnen hebben we de tofste
+                                                        uitjes in de buurt
+                                                        voor je op een rijtje gezet.
+                                                        Weet jij al wat voor leuks je gaat doen tijdens je verblijf bij
+                                                        Stayokay?
+                                                    </p>
+                                                    <button aria-label="Meld je aan"
+                                                        style="width: 100px; height: 30px; font-weight: bold; font-size: 12px; background-color: #FFFFFF; border: 2px solid #0000FF; box-shadow: 5px 7px 0 0 #0000ff; cursor: pointer; color: #0000FF;">
+                                                        BEKIJK TIPS
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="max-width: 280px !important; display: inline-block;">
+                                                    <img class="tipimg"
+                                                        style="min-width:300px; min-height:200px; width:100% !important; height:auto !important; margin: -40px 0px 0px 0px; padding-top: 10px;"
+                                                        src="https://d3neo4j9u6yolw.cloudfront.net/public/customers/marvia/web-shop/stayokay/content/preview_94287f8f314b4a5779098bfa3d73cdb9b7ed579f.jpg">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!-- Email TIPS Details : END -->
+<div style="height: 150px; width: 100%;"></div>
+                    <!-- Email Disclaimer : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="90%">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 20px; color: #848484;" align="center">
+                                    <span>
+                                        Op deze boeking zijn de
+                                        <a href="https://www.stayokay.com/nl/over-stayokay/uniforme-voorwaarden"
+                                            target="_blank" style="color: #289D90;">Algemene Voorwaarden van
+                                            Stayokay</a>
+                                        van toepassing.
+                                    </span>
+                                    <span>
+                                        Change of plans? Annuleer <a target="_blank" style="color: #289D90;"
+                                            href="https://www.stayokay.com/nl/boeking/boeking-annuleren">hier</a> deze
+                                        boeking.
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Email Disclaimer : END -->
+
+                    <!-- Email Footer : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#65B5C1"
+                        style=" max-width: 600px; color: white;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 40px;" class="wrapblock" colspan="3">
+                                    <!--[if mso]>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                            <tr>
+                                <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                                    <div style="display: inline-block; margin: 0 -2px; width: 100%; text-align: left;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <th style="color: white; font-size: 18px;">CONTACT</th>
+                                                <tr>
+                                                    <td style="padding: 10px 0px;">
+                                                        <a href="https://www.stayokay.com/nl/service-contact"
+                                                            style="color: #ffffff; text-decoration: none; margin: 5px 0px 5px 0px;">
+                                                            Contact Stayokay
+                                                        </a>
+                                                        <br>
+                                                        <a href="https://www.stayokay.com/nl/hostel/egmond/welkom"
+                                                            style="color: #ffffff; text-decoration: none;margin:5px 0px 5px 0px;">
+                                                            Contact Hostel
+                                                        </a>
+                                                        <br>
+                                                        <a href="https://www.stayokay.com/nl/faq"
+                                                            style="color: #ffffff; text-decoration: none;margin: 5px 0px 5px 0px;">
+                                                            Veelgestelde vragen (FAQ)
+                                                        </a>
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 10px 0px;">
+                                                        <a href="https://www.instagram.com/stayokayhostels/"
+                                                            target="_blank"><img class="icoon"
+                                                                src="https://content.mailplus.nl/m15/images/ts/stayokay/2017___Stayokay_E_mail_NL/images/instagram.png"
+                                                                alt="Instagram" width="25" height="25"
+                                                                style="padding: 5px;"></a>
+                                                        <a href="https://www.facebook.com/stayokayhostels/"
+                                                            target="_blank"><img class="icoon"
+                                                                src="https://content.mailplus.nl/m15/images/ts/stayokay/2017___Stayokay_E_mail_NL/images/facebook.png"
+                                                                alt="Facebook" width="25" height="25"
+                                                                style="padding: 5px;"></a>
+                                                        <a href="https://www.twitter.com/stayokay/" target="_blank"><img
+                                                                class="icoon"
+                                                                src="https://content.mailplus.nl/m15/images/ts/stayokay/2017___Stayokay_E_mail_NL/images/twitter.png"
+                                                                alt="Twitter" width="25" height="25"
+                                                                style="padding: 5px;"></a>
+                                                        <a href="https://www.youtube.com/stayokay/" target="_blank"><img
+                                                                class="icoon"
+                                                                src="https://content.mailplus.nl/m15/images/ts/stayokay/2017___Stayokay_E_mail_NL/images/youtube.png"
+                                                                alt="Youtube" width="25" height="25"
+                                                                style="padding: 5px;"></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--[if mso]>
+                                        </td>
+                                        <td align="left" valign="top" width="220">
+                                            <![endif]-->
+
+
+                                    <div style="display: inline-block; width: 100%; text-align: left; margin-top: 20px;"
+                                        class="stack-column">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <th style="color: #ffffff; font-size: 18px;">
+                                                    <span
+                                                        style="stroke: #0000FF; color: transparent; -webkit-text-stroke: 1px white; font-size: 17px;">STAY</span>
+                                                    UP TO DATE
+                                                </th>
+                                                <tr>
+                                                    <td>
+                                                        <p>Blijf op de hoogte van het laatste nieuws, de beste acties en
+                                                            aanbiedingen!
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button aria-label="Meld je aan" style="width: 120px; height: 35px; font-weight: bold; background-color: #FFFFFF;
+                                                            border: 2px solid #0000FF;
+                                                            box-shadow: 5px 7px 0 0 #0000ff; cursor: pointer;
+                                                            color: #0000FF;">SCHRIJF ME IN!</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!--[if mso]>
+                                            </td>
+                                            <![endif]-->
+                                        <!--[if mso]>
+                                            </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="border-top: white solid 1px;" width="100%">
+                                <td colspan="3" width="100%" style="padding: 10px 20px 15px 20px;" align="right">
+
+                                    <p style="display: inline-block; padding: 5px; margin: 0;" align="center">Lid van
+                                        Hostelling
+                                        International</p>
+                                    <img class="icoon"
+                                        src="https://www.stayokay.com/assets/logo_hihostels-7127bb93075c29a427a4825283d05b8b0f520fd907207e3930f8ab5b5d8b25b5.png"
+                                        alt="Logo Hostelling International" width="20" height="20"
+                                        style="display: inline-block; padding: 5px;" align="center">
+                                    <img class="icoon"
+                                        src="https://www.stayokay.com/assets/ecolabel-48aed66965aa9e37a457e598d9802b25c2f212b6d8aa219e4546b7e09406afb5.gif"
+                                        alt="Logo EU Ecolabel" width="20" height="20"
+                                        style="display: inline-block; padding: 5px;" align="center">
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Email Footer : END -->
+
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
